@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/AuctionPool.dir/src/main.cpp.o  -o AuctionPool 

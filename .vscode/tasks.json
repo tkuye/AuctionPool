@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build",
+			"command": "g++",
+			"args": [
+				"./src/main.cpp",
+				"-o",
+				"${workspaceFolderBasename}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			
+			"problemMatcher": [
+				
+			],
+			
+			"detail": "compiler: /usr/bin/cpp"
+		}, {
+			"label": "run",
+			"type":"shell",
+			"command":"./${workspaceFolderBasename}",
+			"dependsOn":[
+				"build"
+			], 
+			"problemMatcher":[]
+		}
+	]
+}
