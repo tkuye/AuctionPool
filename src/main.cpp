@@ -15,5 +15,7 @@ cashName.cashAmount();
 cashName.setCash(24);
 cashName.showName(); 
 cashName.cashAmount();
+cashName.setType(1);
+cashName.getType();
 return 0;
 }

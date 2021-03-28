@@ -61,3 +61,35 @@ using namespace std;
         cout << "Name is currently " << name << "." << endl; 
     };
 
+    void User::setType(int type){
+        if (!type == 1 || !type == 2)
+        cout << "Not a valid type." << endl;
+        else {
+        userType = type;
+        switch (userType) {
+            case 1:
+            cout << "Current type is now buyer." << endl; 
+            break;
+            case 2:
+            cout << "Current type is now auctioneer." << endl; 
+            break;
+        };
+        }
+        
+    };
+
+    int User::getType(){
+
+        switch (userType) {
+            case 1:
+            cout << "Current type is buyer." << endl; 
+            break;
+            case 2:
+            cout << "Current type is auctioneer." << endl; 
+            break;
+        }
+
+        return userType;
+    }
+    
+
