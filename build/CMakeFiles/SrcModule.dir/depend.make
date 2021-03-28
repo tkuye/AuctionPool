@@ -4,7 +4,11 @@
 CMakeFiles/SrcModule.dir/src/newUser.cpp.o: ../src/headers/newUser.h
 CMakeFiles/SrcModule.dir/src/newUser.cpp.o: ../src/newUser.cpp
 
+CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/headers/products.h
+CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/products.cpp
+
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/newUser.h
+CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/products.h
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/setAuction.h
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/setAuction.cpp
 

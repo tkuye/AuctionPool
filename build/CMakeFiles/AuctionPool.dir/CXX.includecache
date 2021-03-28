@@ -12,6 +12,10 @@ iostream
 vector
 -
 
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
+iostream
+-
+
 /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
 map
 -
@@ -29,4 +33,6 @@ map
 -
 headers/newUser.h
 /home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+headers/products.h
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
 
