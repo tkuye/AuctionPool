@@ -1,6 +1,7 @@
 #ifndef NEW_USER_H
 #define NEW_USER_H
 
+#include "products.h"
 #include<iostream>
 #include <vector>
 
@@ -14,7 +15,7 @@ class User{
     string ownerId; 
     // Type 1 is for buyer, Type 2 is for Seller
     int userType; 
-    vector <string*> products; 
+    vector <Product*> products; 
     public:
     
     User(int startCash, string username); 
@@ -28,6 +29,7 @@ class User{
     void showName(); 
     void setType(int type);
     int getType();
+    Product* addProduct(string name, int price);
 };
 
 #endif

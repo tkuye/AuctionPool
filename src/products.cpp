@@ -15,6 +15,10 @@ void Product::changeAuctionPrice(int price){
     auctionPrice = price;
 }
 
+void Product::setProductName(string name){
+    productName = name;
+}
+
 string Product::getProductName(){
     return productName;
 }
@@ -47,4 +51,8 @@ int Product::setSellPrice(){
         return -1;
     }
 }
+
+ void Product::setProductNumber(int location){
+     productNumber = location;
+ }
 

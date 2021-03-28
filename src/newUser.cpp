@@ -1,10 +1,11 @@
 #include<iostream>
 #include <vector>
 #include "headers/newUser.h"
+#include "headers/products.h"
 
 using namespace std;
 
-    // To do: Create a product class for each product
+    
     
     User::User(int startCash, string username){
         cash = startCash;
@@ -53,6 +54,16 @@ using namespace std;
         currentPool = nullptr;
     }
     // To do: create add product function and remove product and auction product
+    Product* User::addProduct(string name, int price){
+        Product* product = new Product(ownerId);
+        product->changeIdealPrice(price); //
+        product->setProductName(name);
+        products.push_back(product);
+        int prodNum = products.size() - 1; 
+        product->setProductNumber(prodNum);
+        return product;
+    };
+
     void User::changeName(string name){
         this->name = name;
     }
