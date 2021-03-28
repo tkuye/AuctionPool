@@ -11,8 +11,11 @@ class User{
     int cash;
     string name;
     int * currentPool; 
+    // Type 1 is for buyer, Type 2 is for Seller
+    int userType; 
     vector <string*> products; 
     public:
+    
     User(int startCash, string username); 
     void setCash(unsigned int value);
     int allIn(); 
@@ -22,6 +25,8 @@ class User{
     void leavePool();
     void changeName(string name);
     void showName(); 
+    void setType(int type);
+    int getType();
 };
 
 #endif
