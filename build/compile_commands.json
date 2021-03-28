@@ -3,5 +3,15 @@
   "directory": "/home/tosin/Desktop/AuctionPool/build",
   "command": "/usr/bin/c++    -g   -o CMakeFiles/AuctionPool.dir/src/main.cpp.o -c /home/tosin/Desktop/AuctionPool/src/main.cpp",
   "file": "/home/tosin/Desktop/AuctionPool/src/main.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/setAuction.cpp.o -c /home/tosin/Desktop/AuctionPool/src/setAuction.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/setAuction.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/newUser.cpp.o -c /home/tosin/Desktop/AuctionPool/src/newUser.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/newUser.cpp"
 }
 ]

@@ -144,6 +144,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named AuctionPool
+
+# Build rule for target.
+AuctionPool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AuctionPool
+.PHONY : AuctionPool
+
+# fast build rule for target.
+AuctionPool/fast:
+	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/build
+.PHONY : AuctionPool/fast
+
+#=============================================================================
 # Target rules for targets named NightlyMemCheck
 
 # Build rule for target.
@@ -391,19 +404,6 @@ ExperimentalCoverage/fast:
 .PHONY : ExperimentalCoverage/fast
 
 #=============================================================================
-# Target rules for targets named NightlyCoverage
-
-# Build rule for target.
-NightlyCoverage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyCoverage
-.PHONY : NightlyCoverage
-
-# fast build rule for target.
-NightlyCoverage/fast:
-	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
-.PHONY : NightlyCoverage/fast
-
-#=============================================================================
 # Target rules for targets named ExperimentalStart
 
 # Build rule for target.
@@ -508,17 +508,30 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named AuctionPool
+# Target rules for targets named NightlyCoverage
 
 # Build rule for target.
-AuctionPool: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 AuctionPool
-.PHONY : AuctionPool
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
 
 # fast build rule for target.
-AuctionPool/fast:
-	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/build
-.PHONY : AuctionPool/fast
+NightlyCoverage/fast:
+	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+#=============================================================================
+# Target rules for targets named SrcModule
+
+# Build rule for target.
+SrcModule: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SrcModule
+.PHONY : SrcModule
+
+# fast build rule for target.
+SrcModule/fast:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/build
+.PHONY : SrcModule/fast
 
 src/main.o: src/main.cpp.o
 
@@ -547,6 +560,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/newUser.o: src/newUser.cpp.o
+
+.PHONY : src/newUser.o
+
+# target to build an object file
+src/newUser.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.o
+.PHONY : src/newUser.cpp.o
+
+src/newUser.i: src/newUser.cpp.i
+
+.PHONY : src/newUser.i
+
+# target to preprocess a source file
+src/newUser.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.i
+.PHONY : src/newUser.cpp.i
+
+src/newUser.s: src/newUser.cpp.s
+
+.PHONY : src/newUser.s
+
+# target to generate assembly for a file
+src/newUser.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.s
+.PHONY : src/newUser.cpp.s
+
+src/setAuction.o: src/setAuction.cpp.o
+
+.PHONY : src/setAuction.o
+
+# target to build an object file
+src/setAuction.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/setAuction.cpp.o
+.PHONY : src/setAuction.cpp.o
+
+src/setAuction.i: src/setAuction.cpp.i
+
+.PHONY : src/setAuction.i
+
+# target to preprocess a source file
+src/setAuction.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/setAuction.cpp.i
+.PHONY : src/setAuction.cpp.i
+
+src/setAuction.s: src/setAuction.cpp.s
+
+.PHONY : src/setAuction.s
+
+# target to generate assembly for a file
+src/setAuction.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/setAuction.cpp.s
+.PHONY : src/setAuction.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -556,6 +623,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... package_source"
+	@echo "... AuctionPool"
 	@echo "... edit_cache"
 	@echo "... NightlyMemCheck"
 	@echo "... NightlyTest"
@@ -576,7 +644,6 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyStart"
 	@echo "... ExperimentalCoverage"
-	@echo "... NightlyCoverage"
 	@echo "... ExperimentalStart"
 	@echo "... package"
 	@echo "... NightlyBuild"
@@ -586,10 +653,17 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... AuctionPool"
+	@echo "... NightlyCoverage"
+	@echo "... SrcModule"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/newUser.o"
+	@echo "... src/newUser.i"
+	@echo "... src/newUser.s"
+	@echo "... src/setAuction.o"
+	@echo "... src/setAuction.i"
+	@echo "... src/setAuction.s"
 .PHONY : help
 
 

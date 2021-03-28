@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSrcModule.a  CMakeFiles/SrcModule.dir/src/setAuction.cpp.o CMakeFiles/SrcModule.dir/src/newUser.cpp.o
+/usr/bin/ranlib libSrcModule.a

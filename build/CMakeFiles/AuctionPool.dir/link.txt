@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/AuctionPool.dir/src/main.cpp.o  -o AuctionPool 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/AuctionPool.dir/src/main.cpp.o  -o AuctionPool   -L/home/tosin/Desktop/AuctionPool/src  -Wl,-rpath,/home/tosin/Desktop/AuctionPool/src libSrcModule.a 
