@@ -323,6 +323,12 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 //Path to a program.
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
 
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/tosin/Desktop/AuctionPool/build
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/tosin/Desktop/AuctionPool
+
 //Name of the computer/site where compile is being run
 SITE:STRING=tosin-ThinkCentre-M93p
 

@@ -79,6 +79,7 @@ AuctionPool_EXTERNAL_OBJECTS =
 
 AuctionPool: CMakeFiles/AuctionPool.dir/src/main.cpp.o
 AuctionPool: CMakeFiles/AuctionPool.dir/build.make
+AuctionPool: libSrcModule.a
 AuctionPool: CMakeFiles/AuctionPool.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AuctionPool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AuctionPool.dir/link.txt --verbose=$(VERBOSE)

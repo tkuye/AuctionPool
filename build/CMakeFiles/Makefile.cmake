@@ -55,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/AuctionPool.dir/DependInfo.cmake"
   "CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/NightlyTest.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake"
@@ -74,7 +75,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/NightlySubmit.dir/DependInfo.cmake"
   "CMakeFiles/NightlyStart.dir/DependInfo.cmake"
   "CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake"
-  "CMakeFiles/NightlyCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ExperimentalStart.dir/DependInfo.cmake"
   "CMakeFiles/NightlyBuild.dir/DependInfo.cmake"
   "CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake"
@@ -83,5 +83,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousTest.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
-  "CMakeFiles/AuctionPool.dir/DependInfo.cmake"
+  "CMakeFiles/NightlyCoverage.dir/DependInfo.cmake"
+  "CMakeFiles/SrcModule.dir/DependInfo.cmake"
   )

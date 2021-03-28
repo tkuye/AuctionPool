@@ -1,11 +1,19 @@
 #include<iostream>
-
-
-
+#include "headers/setAuction.h"
+#include <map>
+#include "headers/newUser.h"
 using namespace std;
 
-int main(void) 
+
+
+int main(int argc, char *argv[]) 
 {
-cout << "Hello Universal" << endl;
+User cashName(0, "none"); 
+string name = getName();
+cashName = setupBuyer(name);
+cashName.cashAmount();
+cashName.setCash(24);
+cashName.showName(); 
+cashName.cashAmount();
 return 0;
 }

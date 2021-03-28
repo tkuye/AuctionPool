@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/tosin/Desktop/AuctionPool/build
 
 # The main recursive "all" target.
 all: CMakeFiles/AuctionPool.dir/all
+all: CMakeFiles/SrcModule.dir/all
 
 .PHONY : all
 
@@ -63,6 +64,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/AuctionPool.dir/clean
 clean: CMakeFiles/NightlyMemCheck.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
 clean: CMakeFiles/ContinuousConfigure.dir/clean
@@ -82,7 +84,6 @@ clean: CMakeFiles/Nightly.dir/clean
 clean: CMakeFiles/NightlySubmit.dir/clean
 clean: CMakeFiles/NightlyStart.dir/clean
 clean: CMakeFiles/ExperimentalCoverage.dir/clean
-clean: CMakeFiles/NightlyCoverage.dir/clean
 clean: CMakeFiles/ExperimentalStart.dir/clean
 clean: CMakeFiles/NightlyBuild.dir/clean
 clean: CMakeFiles/ExperimentalBuild.dir/clean
@@ -91,9 +92,37 @@ clean: CMakeFiles/ContinuousStart.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/AuctionPool.dir/clean
+clean: CMakeFiles/NightlyCoverage.dir/clean
+clean: CMakeFiles/SrcModule.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/AuctionPool.dir
+
+# All Build rule for target.
+CMakeFiles/AuctionPool.dir/all: CMakeFiles/SrcModule.dir/all
+	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/depend
+	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=1,2 "Built target AuctionPool"
+.PHONY : CMakeFiles/AuctionPool.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/AuctionPool.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AuctionPool.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
+.PHONY : CMakeFiles/AuctionPool.dir/rule
+
+# Convenience name for target.
+AuctionPool: CMakeFiles/AuctionPool.dir/rule
+
+.PHONY : AuctionPool
+
+# clean rule for target.
+CMakeFiles/AuctionPool.dir/clean:
+	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/clean
+.PHONY : CMakeFiles/AuctionPool.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyMemCheck.dir
@@ -609,33 +638,6 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/NightlyCoverage.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyCoverage.dir/all:
-	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
-	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
-.PHONY : CMakeFiles/NightlyCoverage.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyCoverage.dir/rule
-
-# Convenience name for target.
-NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
-
-.PHONY : NightlyCoverage
-
-# clean rule for target.
-CMakeFiles/NightlyCoverage.dir/clean:
-	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/clean
-.PHONY : CMakeFiles/NightlyCoverage.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/ExperimentalStart.dir
 
 # All Build rule for target.
@@ -852,31 +854,58 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/AuctionPool.dir
+# Target rules for target CMakeFiles/NightlyCoverage.dir
 
 # All Build rule for target.
-CMakeFiles/AuctionPool.dir/all:
-	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/depend
-	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=1,2 "Built target AuctionPool"
-.PHONY : CMakeFiles/AuctionPool.dir/all
+CMakeFiles/NightlyCoverage.dir/all:
+	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
+	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
+.PHONY : CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/AuctionPool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AuctionPool.dir/all
+CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
-.PHONY : CMakeFiles/AuctionPool.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
-AuctionPool: CMakeFiles/AuctionPool.dir/rule
+NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
 
-.PHONY : AuctionPool
+.PHONY : NightlyCoverage
 
 # clean rule for target.
-CMakeFiles/AuctionPool.dir/clean:
-	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/clean
-.PHONY : CMakeFiles/AuctionPool.dir/clean
+CMakeFiles/NightlyCoverage.dir/clean:
+	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/clean
+.PHONY : CMakeFiles/NightlyCoverage.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SrcModule.dir
+
+# All Build rule for target.
+CMakeFiles/SrcModule.dir/all:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/depend
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=3,4,5 "Built target SrcModule"
+.PHONY : CMakeFiles/SrcModule.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SrcModule.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SrcModule.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
+.PHONY : CMakeFiles/SrcModule.dir/rule
+
+# Convenience name for target.
+SrcModule: CMakeFiles/SrcModule.dir/rule
+
+.PHONY : SrcModule
+
+# clean rule for target.
+CMakeFiles/SrcModule.dir/clean:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/clean
+.PHONY : CMakeFiles/SrcModule.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

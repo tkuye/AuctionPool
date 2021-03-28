@@ -20,13 +20,21 @@ iostream
 newUser.h
 /home/tosin/Desktop/AuctionPool/src/headers/newUser.h
 
-/home/tosin/Desktop/AuctionPool/src/main.cpp
+/home/tosin/Desktop/AuctionPool/src/newUser.cpp
 iostream
+-
+vector
+-
+headers/newUser.h
+/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+
+/home/tosin/Desktop/AuctionPool/src/setAuction.cpp
+iostream
+-
+map
 -
 headers/setAuction.h
 /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
-map
--
 headers/newUser.h
 /home/tosin/Desktop/AuctionPool/src/headers/newUser.h
 
