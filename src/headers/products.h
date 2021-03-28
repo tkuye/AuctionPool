@@ -12,6 +12,7 @@ class Product {
     string productName;
     string ownerId;
     int auctionPrice;
+    int productNumber; 
     bool inAuction; 
     public:
     int sellPrice;
@@ -25,6 +26,7 @@ class Product {
     void changeAuctionPrice(int price);
     int profitAmount(); 
     int setSellPrice();
+    void setProductNumber(int location);
 };
 
 
