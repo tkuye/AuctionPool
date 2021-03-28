@@ -13,5 +13,10 @@
   "directory": "/home/tosin/Desktop/AuctionPool/build",
   "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/newUser.cpp.o -c /home/tosin/Desktop/AuctionPool/src/newUser.cpp",
   "file": "/home/tosin/Desktop/AuctionPool/src/newUser.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/products.cpp.o -c /home/tosin/Desktop/AuctionPool/src/products.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/products.cpp"
 }
 ]

@@ -4,7 +4,11 @@
 CMakeFiles/SrcModule.dir/src/newUser.cpp.o
  /home/tosin/Desktop/AuctionPool/src/headers/newUser.h
  /home/tosin/Desktop/AuctionPool/src/newUser.cpp
+CMakeFiles/SrcModule.dir/src/products.cpp.o
+ /home/tosin/Desktop/AuctionPool/src/headers/products.h
+ /home/tosin/Desktop/AuctionPool/src/products.cpp
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o
  /home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+ /home/tosin/Desktop/AuctionPool/src/headers/products.h
  /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
  /home/tosin/Desktop/AuctionPool/src/setAuction.cpp

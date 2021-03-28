@@ -13,6 +13,7 @@ link_directories(src)
 ADD_LIBRARY(SrcModule
 src/setAuction.cpp
 src/newUser.cpp
+src/products.cpp
 )
 
 

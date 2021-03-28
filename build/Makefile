@@ -587,6 +587,33 @@ src/newUser.cpp.s:
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.s
 .PHONY : src/newUser.cpp.s
 
+src/products.o: src/products.cpp.o
+
+.PHONY : src/products.o
+
+# target to build an object file
+src/products.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/products.cpp.o
+.PHONY : src/products.cpp.o
+
+src/products.i: src/products.cpp.i
+
+.PHONY : src/products.i
+
+# target to preprocess a source file
+src/products.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/products.cpp.i
+.PHONY : src/products.cpp.i
+
+src/products.s: src/products.cpp.s
+
+.PHONY : src/products.s
+
+# target to generate assembly for a file
+src/products.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/products.cpp.s
+.PHONY : src/products.cpp.s
+
 src/setAuction.o: src/setAuction.cpp.o
 
 .PHONY : src/setAuction.o
@@ -661,6 +688,9 @@ help:
 	@echo "... src/newUser.o"
 	@echo "... src/newUser.i"
 	@echo "... src/newUser.s"
+	@echo "... src/products.o"
+	@echo "... src/products.i"
+	@echo "... src/products.s"
 	@echo "... src/setAuction.o"
 	@echo "... src/setAuction.i"
 	@echo "... src/setAuction.s"

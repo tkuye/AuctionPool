@@ -96,7 +96,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AuctionPool::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AuctionPool-Debug-0a38126e8f7a94f47367.json",
+					"jsonFile" : "target-AuctionPool-Debug-ff0bbc966923134d3b70.json",
 					"name" : "AuctionPool",
 					"projectIndex" : 0
 				},
@@ -299,7 +299,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SrcModule::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SrcModule-Debug-fb030a4f42e9544d68e8.json",
+					"jsonFile" : "target-SrcModule-Debug-1683937acaf7299236fd.json",
 					"name" : "SrcModule",
 					"projectIndex" : 0
 				}

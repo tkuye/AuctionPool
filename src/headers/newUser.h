@@ -11,6 +11,7 @@ class User{
     int cash;
     string name;
     int * currentPool; 
+    string ownerId; 
     // Type 1 is for buyer, Type 2 is for Seller
     int userType; 
     vector <string*> products; 

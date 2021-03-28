@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
 iostream
--
-vector
 -
 
-/home/tosin/Desktop/AuctionPool/src/newUser.cpp
+/home/tosin/Desktop/AuctionPool/src/products.cpp
 iostream
 -
-vector
--
-headers/newUser.h
-/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+headers/products.h
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
 

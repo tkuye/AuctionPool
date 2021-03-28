@@ -2,6 +2,7 @@
 #include "headers/setAuction.h"
 #include <map>
 #include "headers/newUser.h"
+#include "headers/products.h"
 using namespace std;
 
 

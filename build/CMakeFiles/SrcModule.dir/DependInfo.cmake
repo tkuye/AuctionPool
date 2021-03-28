@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tosin/Desktop/AuctionPool/src/newUser.cpp" "/home/tosin/Desktop/AuctionPool/build/CMakeFiles/SrcModule.dir/src/newUser.cpp.o"
+  "/home/tosin/Desktop/AuctionPool/src/products.cpp" "/home/tosin/Desktop/AuctionPool/build/CMakeFiles/SrcModule.dir/src/products.cpp.o"
   "/home/tosin/Desktop/AuctionPool/src/setAuction.cpp" "/home/tosin/Desktop/AuctionPool/build/CMakeFiles/SrcModule.dir/src/setAuction.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

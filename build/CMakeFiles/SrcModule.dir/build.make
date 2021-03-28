@@ -83,19 +83,34 @@ CMakeFiles/SrcModule.dir/src/newUser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcModule.dir/src/newUser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tosin/Desktop/AuctionPool/src/newUser.cpp -o CMakeFiles/SrcModule.dir/src/newUser.cpp.s
 
+CMakeFiles/SrcModule.dir/src/products.cpp.o: CMakeFiles/SrcModule.dir/flags.make
+CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/products.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SrcModule.dir/src/products.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcModule.dir/src/products.cpp.o -c /home/tosin/Desktop/AuctionPool/src/products.cpp
+
+CMakeFiles/SrcModule.dir/src/products.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SrcModule.dir/src/products.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tosin/Desktop/AuctionPool/src/products.cpp > CMakeFiles/SrcModule.dir/src/products.cpp.i
+
+CMakeFiles/SrcModule.dir/src/products.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcModule.dir/src/products.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tosin/Desktop/AuctionPool/src/products.cpp -o CMakeFiles/SrcModule.dir/src/products.cpp.s
+
 # Object files for target SrcModule
 SrcModule_OBJECTS = \
 "CMakeFiles/SrcModule.dir/src/setAuction.cpp.o" \
-"CMakeFiles/SrcModule.dir/src/newUser.cpp.o"
+"CMakeFiles/SrcModule.dir/src/newUser.cpp.o" \
+"CMakeFiles/SrcModule.dir/src/products.cpp.o"
 
 # External object files for target SrcModule
 SrcModule_EXTERNAL_OBJECTS =
 
 libSrcModule.a: CMakeFiles/SrcModule.dir/src/setAuction.cpp.o
 libSrcModule.a: CMakeFiles/SrcModule.dir/src/newUser.cpp.o
+libSrcModule.a: CMakeFiles/SrcModule.dir/src/products.cpp.o
 libSrcModule.a: CMakeFiles/SrcModule.dir/build.make
 libSrcModule.a: CMakeFiles/SrcModule.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libSrcModule.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSrcModule.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SrcModule.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SrcModule.dir/link.txt --verbose=$(VERBOSE)
 
