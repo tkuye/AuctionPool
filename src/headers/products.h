@@ -2,23 +2,26 @@
 #define PRODUCTS_H
 
 #include <iostream>
-
+#include "User.h"
 using namespace std;
+
+class User;
+class Pool;
 
 class Product {
 
     private:
     int idealPrice; 
     string productName;
-    string ownerId;
+    User * owner;
     int auctionPrice;
     int productNumber; 
     bool inAuction; 
     public:
     int sellPrice;
-    Product(string id); 
+    Product(User * owner); 
     void getInAuction(bool status); 
-    void setOwnerId(string id);
+    void changeOwner(User * owner);
     void setProductName(string name);
     string getProductName();
     int getIdealPrice();

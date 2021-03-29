@@ -1,15 +1,18 @@
 #include <vector>
 #include "headers/Pool.h"
 #include "headers/Pools.h"
+#include "headers/User.h"
 using namespace std;
 
 void Pools::addPool(Pool * pool) {
     pools.push_back(pool);
 }
 
-Pool * Pools::createPool(string Auid){
-    Pool * pool = new Pool(Auid);
+Pool * Pools::createPool(User * user, string name){
+    Pool * pool = new Pool(user, name);
     addPool(pool);
+    pool->addUser();
+    user->joinPool(pool);
     return pool;
 }
 
@@ -25,8 +28,9 @@ void Pools::destroyPool(int id){
         i++; 
     }
 }
+
 // current args is to filter to only show pools within a certain price range
-void Pools::showPools(int current = 0){
+void Pools::showPools(int current){
     if (current == 0){
     for (Pool * pool : pools){
         cout << "Pool Name: " << pool->poolName << endl;

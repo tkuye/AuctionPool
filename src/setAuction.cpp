@@ -7,9 +7,9 @@
 using namespace std;
 
 
-User setupBuyer(string name){
+User * setupBuyer(string name){
     
-    User userCash(0, "none"); 
+    User * userCash = new User(0, "none"); 
     unsigned int cash; 
     cout << "Hello " << name << ", Welcome to AuctionPool!" << endl;
     cout << "Please enter the amount of cash you wish to play with: "; 
@@ -36,15 +36,15 @@ User setupBuyer(string name){
         }
     }
 
-    userCash.setCash(cash);
-    userCash.changeName(name);
+    userCash->setCash(cash);
+    userCash->changeName(name);
     return userCash;
 }
 
 
 string getName(){
     string name;
-    cout << "Hello There, what is your name?: ";
+    cout << "Hello there, what is your name?: ";
     cin >> name;
     return name;
 }

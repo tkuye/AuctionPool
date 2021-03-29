@@ -668,6 +668,33 @@ src/products.cpp.s:
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/products.cpp.s
 .PHONY : src/products.cpp.s
 
+src/randomNum.o: src/randomNum.cpp.o
+
+.PHONY : src/randomNum.o
+
+# target to build an object file
+src/randomNum.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/randomNum.cpp.o
+.PHONY : src/randomNum.cpp.o
+
+src/randomNum.i: src/randomNum.cpp.i
+
+.PHONY : src/randomNum.i
+
+# target to preprocess a source file
+src/randomNum.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/randomNum.cpp.i
+.PHONY : src/randomNum.cpp.i
+
+src/randomNum.s: src/randomNum.cpp.s
+
+.PHONY : src/randomNum.s
+
+# target to generate assembly for a file
+src/randomNum.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/randomNum.cpp.s
+.PHONY : src/randomNum.cpp.s
+
 src/setAuction.o: src/setAuction.cpp.o
 
 .PHONY : src/setAuction.o
@@ -751,6 +778,9 @@ help:
 	@echo "... src/products.o"
 	@echo "... src/products.i"
 	@echo "... src/products.s"
+	@echo "... src/randomNum.o"
+	@echo "... src/randomNum.i"
+	@echo "... src/randomNum.s"
 	@echo "... src/setAuction.o"
 	@echo "... src/setAuction.i"
 	@echo "... src/setAuction.s"

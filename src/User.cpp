@@ -3,6 +3,9 @@
 #include "headers/User.h"
 #include "headers/products.h"
 #include "headers/Pool.h"
+#include "headers/randomNum.h"
+#define OWNER_ID_LEN 12
+
 using namespace std;
 
     
@@ -10,6 +13,7 @@ using namespace std;
     User::User(int startCash, string username){
         cash = startCash;
         name = username;
+        ownerId = gen_random(OWNER_ID_LEN); 
     }
     // Add money to the current account. 
     void User::setCash(unsigned int value){
@@ -56,7 +60,7 @@ using namespace std;
     }
     // To do: create add product function and remove product and auction product
     Product* User::addProduct(string name, int price){
-        Product* product = new Product(ownerId);
+        Product* product = new Product(this);
         product->changeIdealPrice(price); //
         product->setProductName(name);
         products.push_back(product);
@@ -72,7 +76,7 @@ using namespace std;
     void User::showName(){
         cout << "Name is currently " << name << "." << endl; 
     };
-
+    // Set type of the current user, 1 is for buyer, 2 is for auctioneer
     void User::setType(int type){
         if (!type == 1 || !type == 2)
         cout << "Not a valid type." << endl;
@@ -103,5 +107,12 @@ using namespace std;
 
         return userType;
     }
-    
+            
+    string User::getOwnerId(){
+        return ownerId;
+    }
 
+
+Pool * User::getCurrentPool(){
+    return currentPool;
+}

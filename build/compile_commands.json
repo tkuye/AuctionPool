@@ -28,5 +28,10 @@
   "directory": "/home/tosin/Desktop/AuctionPool/build",
   "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/Pools.cpp.o -c /home/tosin/Desktop/AuctionPool/src/Pools.cpp",
   "file": "/home/tosin/Desktop/AuctionPool/src/Pools.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/randomNum.cpp.o -c /home/tosin/Desktop/AuctionPool/src/randomNum.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/randomNum.cpp"
 }
 ]

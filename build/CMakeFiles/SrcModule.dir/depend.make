@@ -3,20 +3,27 @@
 
 CMakeFiles/SrcModule.dir/src/Pool.cpp.o: ../src/Pool.cpp
 CMakeFiles/SrcModule.dir/src/Pool.cpp.o: ../src/headers/Pool.h
+CMakeFiles/SrcModule.dir/src/Pool.cpp.o: ../src/headers/User.h
 CMakeFiles/SrcModule.dir/src/Pool.cpp.o: ../src/headers/products.h
 
 CMakeFiles/SrcModule.dir/src/Pools.cpp.o: ../src/Pools.cpp
 CMakeFiles/SrcModule.dir/src/Pools.cpp.o: ../src/headers/Pool.h
 CMakeFiles/SrcModule.dir/src/Pools.cpp.o: ../src/headers/Pools.h
+CMakeFiles/SrcModule.dir/src/Pools.cpp.o: ../src/headers/User.h
 CMakeFiles/SrcModule.dir/src/Pools.cpp.o: ../src/headers/products.h
 
 CMakeFiles/SrcModule.dir/src/User.cpp.o: ../src/User.cpp
 CMakeFiles/SrcModule.dir/src/User.cpp.o: ../src/headers/Pool.h
 CMakeFiles/SrcModule.dir/src/User.cpp.o: ../src/headers/User.h
 CMakeFiles/SrcModule.dir/src/User.cpp.o: ../src/headers/products.h
+CMakeFiles/SrcModule.dir/src/User.cpp.o: ../src/headers/randomNum.h
 
+CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/headers/Pool.h
+CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/headers/User.h
 CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/headers/products.h
 CMakeFiles/SrcModule.dir/src/products.cpp.o: ../src/products.cpp
+
+CMakeFiles/SrcModule.dir/src/randomNum.cpp.o: ../src/randomNum.cpp
 
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/Pool.h
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/User.h

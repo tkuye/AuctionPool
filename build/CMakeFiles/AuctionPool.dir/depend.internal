@@ -3,6 +3,7 @@
 
 CMakeFiles/AuctionPool.dir/src/main.cpp.o
  /home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+ /home/tosin/Desktop/AuctionPool/src/headers/Pools.h
  /home/tosin/Desktop/AuctionPool/src/headers/User.h
  /home/tosin/Desktop/AuctionPool/src/headers/products.h
  /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h

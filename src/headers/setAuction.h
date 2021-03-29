@@ -6,7 +6,7 @@
 using namespace std;
 
 // Function for setting up an individual buyer 
-User setupBuyer(string name);
+User * setupBuyer(string name);
 // Function used to get the name of a new user.
 string getName();
 #endif 

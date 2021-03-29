@@ -1,6 +1,6 @@
 #include <vector>
 #include "Pool.h"
-
+#include "User.h"
 using namespace std;
 
 class Pools {
@@ -8,7 +8,8 @@ class Pools {
     void addPool(Pool * pool); 
     public:
         vector <Pool*> pools;
-        Pool * createPool(string Auid); 
+        Pool * createPool(User * user, string name); 
         void destroyPool(int id); 
-        void showPools(int current); 
+        void showPools(int current=0); 
+        
 };

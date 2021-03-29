@@ -1,11 +1,12 @@
 #ifndef NEW_USER_H
 #define NEW_USER_H
-
+#include <vector>
 #include "products.h"
 #include "Pool.h"
 #include<iostream>
-#include <vector>
 
+class Pool;
+class Product;
 using namespace std;
 
 class User{
@@ -16,9 +17,9 @@ class User{
     string ownerId; 
     // Type 1 is for buyer, Type 2 is for Seller
     int userType; 
-    vector <Product*> products; 
+    static User * user; 
     public:
-    
+    vector <Product*> products; 
     User(int startCash, string username); 
     void setCash(unsigned int value);
     int allIn(); 
@@ -30,6 +31,8 @@ class User{
     void showName(); 
     void setType(int type);
     int getType();
+    Pool * getCurrentPool();
+    string getOwnerId();
     Product* addProduct(string name, int price);
 };
 
