@@ -1,8 +1,8 @@
 #include<iostream>
 #include <vector>
-#include "headers/newUser.h"
+#include "headers/User.h"
 #include "headers/products.h"
-
+#include "headers/Pool.h"
 using namespace std;
 
     
@@ -44,14 +44,15 @@ using namespace std;
     }
 
     // Joins an auction pool 
-    void User::joinPool(int pool){
-        currentPool = &pool;
-        cout << "Currently part of pool " << pool << "."<< endl;
+    void User::joinPool(Pool * pool){
+        currentPool = pool;
+        cout << "Currently part of pool " << pool->poolName << "."<< endl;
     }
     // Leaves an auction pool
     void User::leavePool(){
         delete currentPool; 
         currentPool = nullptr;
+        
     }
     // To do: create add product function and remove product and auction product
     Product* User::addProduct(string name, int price){

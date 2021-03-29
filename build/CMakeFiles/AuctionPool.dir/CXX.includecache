@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+iostream
+-
+products.h
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
+
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
+products.h
+/home/tosin/Desktop/AuctionPool/src/headers/products.h
+Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
 iostream
 -
 vector
@@ -21,8 +31,8 @@ map
 -
 iostream
 -
-newUser.h
-/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
 
 /home/tosin/Desktop/AuctionPool/src/main.cpp
 iostream
@@ -31,8 +41,8 @@ headers/setAuction.h
 /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
 map
 -
-headers/newUser.h
-/home/tosin/Desktop/AuctionPool/src/headers/newUser.h
+headers/User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
 headers/products.h
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
 

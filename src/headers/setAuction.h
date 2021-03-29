@@ -2,7 +2,7 @@
 #define SET_AUCTION_H
 #include<map>
 #include<iostream>
-#include "newUser.h"
+#include "User.h"
 using namespace std;
 
 // Function for setting up an individual buyer 

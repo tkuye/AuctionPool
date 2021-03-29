@@ -12,8 +12,10 @@ link_directories(src)
 
 ADD_LIBRARY(SrcModule
 src/setAuction.cpp
-src/newUser.cpp
+src/User.cpp
 src/products.cpp
+src/Pool.cpp
+src/Pools.cpp
 )
 
 
