@@ -1,14 +1,14 @@
 #include<iostream>
 #include "headers/products.h"
-
+#include "headers/User.h"
 using namespace std;
 
-Product::Product(string id){
-    ownerId = id; 
+Product::Product(User * owner){
+    this->owner = owner; 
 }
 
-void Product::setOwnerId(string id){
-    ownerId = id;
+void Product::changeOwner(User * owner){
+    this->owner = owner;
 }
 
 void Product::changeAuctionPrice(int price){

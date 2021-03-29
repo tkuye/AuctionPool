@@ -9,22 +9,36 @@
 /home/tosin/Desktop/AuctionPool/src/headers/Pool.h
 iostream
 -
+vector
+-
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
 products.h
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
 
+/home/tosin/Desktop/AuctionPool/src/headers/Pools.h
+vector
+-
+Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+User.h
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
+
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
+vector
+-
 products.h
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
 Pool.h
 /home/tosin/Desktop/AuctionPool/src/headers/Pool.h
 iostream
 -
-vector
--
 
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
 iostream
 -
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
 
 /home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
 map
@@ -37,12 +51,16 @@ User.h
 /home/tosin/Desktop/AuctionPool/src/main.cpp
 iostream
 -
-headers/setAuction.h
-/home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
 map
 -
+headers/setAuction.h
+/home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
 headers/User.h
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
 headers/products.h
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
+headers/Pools.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pools.h
+headers/Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
 

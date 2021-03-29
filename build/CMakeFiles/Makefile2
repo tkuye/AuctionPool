@@ -109,7 +109,7 @@ CMakeFiles/AuctionPool.dir/all: CMakeFiles/SrcModule.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AuctionPool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AuctionPool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
 .PHONY : CMakeFiles/AuctionPool.dir/rule
@@ -887,12 +887,12 @@ CMakeFiles/NightlyCoverage.dir/clean:
 CMakeFiles/SrcModule.dir/all:
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/depend
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target SrcModule"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tosin/Desktop/AuctionPool/build/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target SrcModule"
 .PHONY : CMakeFiles/SrcModule.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SrcModule.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SrcModule.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tosin/Desktop/AuctionPool/build/CMakeFiles 0
 .PHONY : CMakeFiles/SrcModule.dir/rule
