@@ -2,6 +2,7 @@
 #define NEW_USER_H
 
 #include "products.h"
+#include "Pool.h"
 #include<iostream>
 #include <vector>
 
@@ -11,7 +12,7 @@ class User{
     private:
     int cash;
     string name;
-    int * currentPool; 
+    Pool * currentPool; 
     string ownerId; 
     // Type 1 is for buyer, Type 2 is for Seller
     int userType; 
@@ -23,7 +24,7 @@ class User{
     int allIn(); 
     int getCash(int value);
     void cashAmount();
-    void joinPool(int pool);
+    void joinPool(Pool * pool);
     void leavePool();
     void changeName(string name);
     void showName(); 

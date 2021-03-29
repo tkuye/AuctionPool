@@ -533,6 +533,87 @@ SrcModule/fast:
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/build
 .PHONY : SrcModule/fast
 
+src/Pool.o: src/Pool.cpp.o
+
+.PHONY : src/Pool.o
+
+# target to build an object file
+src/Pool.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pool.cpp.o
+.PHONY : src/Pool.cpp.o
+
+src/Pool.i: src/Pool.cpp.i
+
+.PHONY : src/Pool.i
+
+# target to preprocess a source file
+src/Pool.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pool.cpp.i
+.PHONY : src/Pool.cpp.i
+
+src/Pool.s: src/Pool.cpp.s
+
+.PHONY : src/Pool.s
+
+# target to generate assembly for a file
+src/Pool.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pool.cpp.s
+.PHONY : src/Pool.cpp.s
+
+src/Pools.o: src/Pools.cpp.o
+
+.PHONY : src/Pools.o
+
+# target to build an object file
+src/Pools.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pools.cpp.o
+.PHONY : src/Pools.cpp.o
+
+src/Pools.i: src/Pools.cpp.i
+
+.PHONY : src/Pools.i
+
+# target to preprocess a source file
+src/Pools.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pools.cpp.i
+.PHONY : src/Pools.cpp.i
+
+src/Pools.s: src/Pools.cpp.s
+
+.PHONY : src/Pools.s
+
+# target to generate assembly for a file
+src/Pools.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/Pools.cpp.s
+.PHONY : src/Pools.cpp.s
+
+src/User.o: src/User.cpp.o
+
+.PHONY : src/User.o
+
+# target to build an object file
+src/User.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/User.cpp.o
+.PHONY : src/User.cpp.o
+
+src/User.i: src/User.cpp.i
+
+.PHONY : src/User.i
+
+# target to preprocess a source file
+src/User.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/User.cpp.i
+.PHONY : src/User.cpp.i
+
+src/User.s: src/User.cpp.s
+
+.PHONY : src/User.s
+
+# target to generate assembly for a file
+src/User.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/User.cpp.s
+.PHONY : src/User.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -559,33 +640,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/AuctionPool.dir/build.make CMakeFiles/AuctionPool.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/newUser.o: src/newUser.cpp.o
-
-.PHONY : src/newUser.o
-
-# target to build an object file
-src/newUser.cpp.o:
-	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.o
-.PHONY : src/newUser.cpp.o
-
-src/newUser.i: src/newUser.cpp.i
-
-.PHONY : src/newUser.i
-
-# target to preprocess a source file
-src/newUser.cpp.i:
-	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.i
-.PHONY : src/newUser.cpp.i
-
-src/newUser.s: src/newUser.cpp.s
-
-.PHONY : src/newUser.s
-
-# target to generate assembly for a file
-src/newUser.cpp.s:
-	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/newUser.cpp.s
-.PHONY : src/newUser.cpp.s
 
 src/products.o: src/products.cpp.o
 
@@ -682,12 +736,18 @@ help:
 	@echo "... ContinuousSubmit"
 	@echo "... NightlyCoverage"
 	@echo "... SrcModule"
+	@echo "... src/Pool.o"
+	@echo "... src/Pool.i"
+	@echo "... src/Pool.s"
+	@echo "... src/Pools.o"
+	@echo "... src/Pools.i"
+	@echo "... src/Pools.s"
+	@echo "... src/User.o"
+	@echo "... src/User.i"
+	@echo "... src/User.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/newUser.o"
-	@echo "... src/newUser.i"
-	@echo "... src/newUser.s"
 	@echo "... src/products.o"
 	@echo "... src/products.i"
 	@echo "... src/products.s"

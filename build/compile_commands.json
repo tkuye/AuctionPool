@@ -11,12 +11,22 @@
 },
 {
   "directory": "/home/tosin/Desktop/AuctionPool/build",
-  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/newUser.cpp.o -c /home/tosin/Desktop/AuctionPool/src/newUser.cpp",
-  "file": "/home/tosin/Desktop/AuctionPool/src/newUser.cpp"
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/User.cpp.o -c /home/tosin/Desktop/AuctionPool/src/User.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/User.cpp"
 },
 {
   "directory": "/home/tosin/Desktop/AuctionPool/build",
   "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/products.cpp.o -c /home/tosin/Desktop/AuctionPool/src/products.cpp",
   "file": "/home/tosin/Desktop/AuctionPool/src/products.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/Pool.cpp.o -c /home/tosin/Desktop/AuctionPool/src/Pool.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/Pool.cpp"
+},
+{
+  "directory": "/home/tosin/Desktop/AuctionPool/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/SrcModule.dir/src/Pools.cpp.o -c /home/tosin/Desktop/AuctionPool/src/Pools.cpp",
+  "file": "/home/tosin/Desktop/AuctionPool/src/Pools.cpp"
 }
 ]
