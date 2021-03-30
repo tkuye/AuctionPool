@@ -24,7 +24,7 @@ class User{
     void setCash(unsigned int value);
     int allIn(); 
     int getCash(int value);
-    void cashAmount();
+    int cashAmount();
     void joinPool(Pool * pool);
     void leavePool();
     void changeName(string name);

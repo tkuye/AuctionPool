@@ -722,6 +722,33 @@ src/setAuction.cpp.s:
 	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/setAuction.cpp.s
 .PHONY : src/setAuction.cpp.s
 
+src/userHome.o: src/userHome.cpp.o
+
+.PHONY : src/userHome.o
+
+# target to build an object file
+src/userHome.cpp.o:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/userHome.cpp.o
+.PHONY : src/userHome.cpp.o
+
+src/userHome.i: src/userHome.cpp.i
+
+.PHONY : src/userHome.i
+
+# target to preprocess a source file
+src/userHome.cpp.i:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/userHome.cpp.i
+.PHONY : src/userHome.cpp.i
+
+src/userHome.s: src/userHome.cpp.s
+
+.PHONY : src/userHome.s
+
+# target to generate assembly for a file
+src/userHome.cpp.s:
+	$(MAKE) -f CMakeFiles/SrcModule.dir/build.make CMakeFiles/SrcModule.dir/src/userHome.cpp.s
+.PHONY : src/userHome.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -784,6 +811,9 @@ help:
 	@echo "... src/setAuction.o"
 	@echo "... src/setAuction.i"
 	@echo "... src/setAuction.s"
+	@echo "... src/userHome.o"
+	@echo "... src/userHome.i"
+	@echo "... src/userHome.s"
 .PHONY : help
 
 

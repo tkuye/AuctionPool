@@ -31,3 +31,10 @@ CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/products.h
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/headers/setAuction.h
 CMakeFiles/SrcModule.dir/src/setAuction.cpp.o: ../src/setAuction.cpp
 
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/headers/Pool.h
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/headers/Pools.h
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/headers/User.h
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/headers/products.h
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/headers/setAuction.h
+CMakeFiles/SrcModule.dir/src/userHome.cpp.o: ../src/userHome.cpp
+

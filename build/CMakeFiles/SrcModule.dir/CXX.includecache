@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/tosin/Desktop/AuctionPool/src/Pool.cpp
-headers/Pool.h
-/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
-headers/products.h
-/home/tosin/Desktop/AuctionPool/src/headers/products.h
-iostream
--
-
 /home/tosin/Desktop/AuctionPool/src/headers/Pool.h
 iostream
 -
@@ -23,6 +15,14 @@ User.h
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
 products.h
 /home/tosin/Desktop/AuctionPool/src/headers/products.h
+
+/home/tosin/Desktop/AuctionPool/src/headers/Pools.h
+vector
+-
+Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
 
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
 vector
@@ -39,4 +39,26 @@ iostream
 -
 User.h
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
+
+/home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
+map
+-
+iostream
+-
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
+
+/home/tosin/Desktop/AuctionPool/src/userHome.cpp
+map
+-
+iostream
+-
+headers/User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
+headers/Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+headers/setAuction.h
+/home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
+headers/Pools.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pools.h
 

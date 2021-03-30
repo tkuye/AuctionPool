@@ -22,7 +22,7 @@ using namespace std;
         }
         cash += value;
         
-        cout << "Cash value is now equal to " << cash << "." << endl;
+        cout << "Cash balance is now equal to $" << cash << "." << endl;
     }
     // Empty all the monet from the account for a bid. 
     int User::allIn() {
@@ -43,8 +43,8 @@ using namespace std;
     }
 
     // Shows the amount of money in the account.
-    void User::cashAmount(){
-        cout << "Cash in account is " << cash << "." << endl; 
+    int User::cashAmount(){
+         return cash;
     }
 
     // Joins an auction pool 
@@ -95,16 +95,6 @@ using namespace std;
     };
 
     int User::getType(){
-
-        switch (userType) {
-            case 1:
-            cout << "Current type is buyer." << endl; 
-            break;
-            case 2:
-            cout << "Current type is auctioneer." << endl; 
-            break;
-        }
-
         return userType;
     }
             
