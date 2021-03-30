@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SrcModule.dir/src/products.cpp.o"
   "CMakeFiles/SrcModule.dir/src/randomNum.cpp.o"
   "CMakeFiles/SrcModule.dir/src/setAuction.cpp.o"
+  "CMakeFiles/SrcModule.dir/src/userHome.cpp.o"
   "libSrcModule.a"
   "libSrcModule.pdb"
 )

@@ -27,7 +27,7 @@ User * setupBuyer(string name){
     while (!confirmed){
         cin >> confirm;
         if (confirm == 'y') {
-            cout << "Your amount of cash has been confirmed. Please continue to select a pool." << endl;
+            cout << "Your amount of cash has been confirmed." << endl;
             confirmed = true;
 
         } else {
@@ -35,7 +35,17 @@ User * setupBuyer(string name){
             return userCash;
         }
     }
+    int userType; 
 
+    cout << "Please select your type as buyer or auctioneer. (1 for buyer, 2 for auctioneer) > "; 
+    cin >> userType;
+    while (userType != 1 && userType != 2){
+        cout << "Not a valid type, please try again." << endl; 
+        cout << "> "; 
+        cin.clear(); 
+        cin >> userType;
+    }
+    userCash->setType(userType);
     userCash->setCash(cash);
     userCash->changeName(name);
     return userCash;

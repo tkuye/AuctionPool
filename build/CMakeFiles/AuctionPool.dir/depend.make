@@ -6,5 +6,6 @@ CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/headers/Pools.h
 CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/headers/User.h
 CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/headers/products.h
 CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/headers/setAuction.h
+CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/headers/userHome.h
 CMakeFiles/AuctionPool.dir/src/main.cpp.o: ../src/main.cpp
 

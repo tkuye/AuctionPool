@@ -48,6 +48,18 @@ iostream
 User.h
 /home/tosin/Desktop/AuctionPool/src/headers/User.h
 
+/home/tosin/Desktop/AuctionPool/src/headers/userHome.h
+map
+-
+iostream
+-
+User.h
+/home/tosin/Desktop/AuctionPool/src/headers/User.h
+Pool.h
+/home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+setAuction.h
+/home/tosin/Desktop/AuctionPool/src/headers/setAuction.h
+
 /home/tosin/Desktop/AuctionPool/src/main.cpp
 iostream
 -
@@ -63,4 +75,6 @@ headers/Pools.h
 /home/tosin/Desktop/AuctionPool/src/headers/Pools.h
 headers/Pool.h
 /home/tosin/Desktop/AuctionPool/src/headers/Pool.h
+headers/userHome.h
+/home/tosin/Desktop/AuctionPool/src/headers/userHome.h
 
