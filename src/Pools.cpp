@@ -48,3 +48,8 @@ void Pools::showPools(int current){
     }
     }; 
 }
+
+
+int Pools::getSize(){
+    return pools.size();
+}
