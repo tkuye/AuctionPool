@@ -38,7 +38,7 @@ void createHome() {
     while (!current){
         
         cout << "\n************************************" << endl; 
-        cout << "Welcome to your dashboard " << name << "!" << endl; 
+        cout << "Welcome to your Dashboard " << name << "!" << endl; 
         cout << "************************************" << endl; 
         cout << "What would you like to do?: " << endl;
         if (user->getType() == 2){
@@ -55,25 +55,67 @@ void createHome() {
         cout << "5. Add money to your account" << endl; 
         cout << "6. View current account balance" << endl; 
         if (user->getType()== 2) 
-        cout << "7. Add products\n8. Start auction" << endl; 
+        cout << "7. Add products\n8. Start auction\n9. Add products to pool" << endl; 
         if (user->getType()== 1) 
         cout << "7. Join auction" << endl; 
+        
+        cout << "Enter 999 to Quit" << endl;
         cout << "> "; 
         cin.clear(); 
         cin >> userInput; 
         cout << "\n"; 
         bool buyer = false; 
+
+        string poolName; 
+        int accountAdd; 
+        int productCount; 
+        string prodName; 
+        int prodPrice; 
+        
         switch (userInput){
 
             case 1:
                 if (user->getType() == 1){
                     //joinAPool(); 
+                    if (pools.getSize() == 0){
+                        cout << "Sorry, there are no pools available to join. ";
+                    }
+                    else {
+                        
+                        cout << "Which pool would you like to join?" << endl; 
+                        pools.showPools(user->cashAmount()); 
+                        cout << "\n"; 
+                        
+                        cout << "Type the pool name you would like to join > "; 
+                        cin >> poolName; 
+                        bool foundPool = false;
+                        if (poolName == user->getCurrentPool()->getPoolName()){
+                            cout << "You are already apart of the pool " << poolName << "." << endl; 
+                        }
+                        else{
+
+                        
+                        for (Pool * pool : pools.pools){
+                            if (pool->getPoolName() == poolName){
+                                user->joinPool(pool);
+                                pool->addUser();
+                                foundPool = true; 
+                                break;
+                            }
+
+                        }
+                        if (!foundPool) {
+                            cout << "There is no pool with the name " << poolName << endl; 
+                        }
+                        }
+
+                    }   
                     buyer = true; 
                 }
                 else if (user->getType() == 2){
                     //createAPool(); 
                     
-                    string poolName; 
+                   
                     cout << "What would you like to name your pool?: ";
                     cin >> poolName; 
                     pools.createPool(user, poolName);
@@ -86,7 +128,7 @@ void createHome() {
                 cout << "Here are your current products: " << endl; 
                 for (Product * p : user->products ){
                     cout << "Product name: " << p->getProductName() << endl; 
-                    cout << "Product ideal price: " << p->getIdealPrice() << endl; 
+                    cout << "Product ideal price: $" << p->getIdealPrice() << endl; 
                 }
                 cin.get(); 
                 break;
@@ -108,8 +150,6 @@ void createHome() {
                 cin.get(); 
                 break; 
             case 5:
-           
-            int accountAdd; 
                 cout << "How much money would you like to add to your account?: "; 
                 cin >> accountAdd; 
                 if (!accountAdd || accountAdd < 0){
@@ -125,10 +165,52 @@ void createHome() {
                 cout << "Your current account balance is: $" << user->cashAmount() << "."  << endl; 
                 cin.get(); 
                 break; 
+             
+            case 7:
+                
+                productCount = 1;
+                cout << "How many products would you like to add? > "; 
+                if (!productCount || productCount < 0){
+                    cout << "Not a valid amount!" << endl; 
+                    break; 
+                }
+                cin >> productCount;
+                
+                
+                for (int i = 0; i < productCount; i++){
+                    cout << "Please enter the product name > "; 
+                    cin >> prodName; 
+                    cout << endl; 
+
+                    cout << "Please enter the product's ideal selling price > "; 
+                    cin >> prodPrice; 
+                    if (!prodPrice || prodPrice < 0){
+                        cout << "Not a valid price! Cannot add product" << endl;
+                        
+                    }
+                    else{
+                        user->addProduct(prodName, prodPrice); 
+                        cout << "Added your product: " << prodName << endl; 
+                    }
+                   
+                }
+
+                break; 
+            
+            case 9:
+            if (!user->getCurrentPool())
+                break;
+
+                user->getCurrentPool()->addAuctionProducts(); 
+                cout << "Added products to the pool." << endl; 
+                break;
+            case 999:
+                current = true; 
+                cout << "Goodbye for now!" << endl; 
+                break; 
             default:
                 cout << "Not a valid input. " << endl; 
-                break; 
-
+                break;
         }
 
 

@@ -11,5 +11,5 @@ class Pools {
         Pool * createPool(User * user, string name); 
         void destroyPool(int id); 
         void showPools(int current=0); 
-        
+        int getSize();
 };

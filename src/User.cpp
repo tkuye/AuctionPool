@@ -52,6 +52,8 @@ using namespace std;
         currentPool = pool;
         cout << "Currently part of pool " << pool->poolName << "."<< endl;
     }
+
+    
     // Leaves an auction pool
     void User::leavePool(){
         delete currentPool; 
@@ -64,7 +66,8 @@ using namespace std;
         product->changeIdealPrice(price); //
         product->setProductName(name);
         products.push_back(product);
-        int prodNum = products.size() - 1; 
+        int prodNum = products.size() - 1;
+
         product->setProductNumber(prodNum);
         return product;
     };

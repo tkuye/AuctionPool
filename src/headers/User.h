@@ -34,6 +34,7 @@ class User{
     Pool * getCurrentPool();
     string getOwnerId();
     Product* addProduct(string name, int price);
+    
 };
 
 #endif

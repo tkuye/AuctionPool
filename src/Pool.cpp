@@ -46,6 +46,7 @@ string Pool::getPoolName(){
 void Pool::addAuctionProducts(){
     for(vector<Product *>::iterator it = auctioneer->products.begin(); it != auctioneer->products.end(); ++it) {
         this->products.push_back(*it);
+        numberOfProducts++; 
 }
 }
 
